@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  # Ways to make routes
+  # 1) get '/articles', to: 'articles#index'
+  # 2) resources :articles # By default, it creates ALL rules for CRUD actions. CRUD(create,read,update,destroy)
+  resources :articles, only: [:index]  # By default, it creates rules for ONLY
 end

@@ -13,7 +13,7 @@ RSpec.describe User, type: :model do
 
     it 'should validate presences of attributes' do
       # Fails REQUIRED MISSING VALUES
-      user_two = build(:user, login: user.login = "", provider: user.provider = "")
+      user_two = build(:user, login: user.login = "", provider: user.provider = +"")
       expect(user).not_to be_valid
       expect(user.errors[:login]).to include("can't be blank")
       expect(user.errors[:provider]).to include("can't be blank")

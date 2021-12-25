@@ -31,6 +31,16 @@ gem 'jsonapi-serializer'
 
 gem 'jsom-pagination'
 
+gem 'jsonapi_errors_handler'
+
+# For GitHub authentication
+gem 'octokit', '~> 4.0'
+
+gem 'figaro'
+# For Google authentication
+gem 'omniauth-google-oauth2'
+
+
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 

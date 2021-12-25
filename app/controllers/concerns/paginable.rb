@@ -1,4 +1,4 @@
-module Paginable
+    module Paginable
     # NOTE: 'extend' is like calling a static method in Java or C++    ex. <Classname>.<class_method>
     # NOTE: 'include' requires an instance (.new) of the class to call its methods    ex<Classname>.new.<class_method>
 
